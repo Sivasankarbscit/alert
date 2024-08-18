@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Notification Alert Messages</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<style>
+		/* Add this style to ensure the error alert is centered by default */
+		.alert_wrapper.active .alert_error {
+			top: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div class="alert_wrapper active"> <!-- Ensure the wrapper is active by default -->
+		<div class="alert_backdrop"></div>
+		<div class="alert_inner">
+			<div class="alert_item alert_error" style="top: 50%;"> <!-- Set the error alert's position to 50% -->
+				<div class="icon data_icon">
+					<i class="fas fa-bomb"></i>
+				</div>
+				<div class="data">
+					<p class="title"><span>Error:</span>
+						User action error
+					</p>
+					<p class="sub">Lorem ipsum dolor sit amet.</p>
+				</div>
+				<div class="icon close">
+					<i class="fas fa-times"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script>
+	// Add an event listener to the close button to go back to the previous page
+	var close_btn = document.querySelector(".close");
+	close_btn.addEventListener("click", function(){
+		window.history.back();
+	});
+</script>
+
+</body>
+</html>
