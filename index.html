@@ -9,10 +9,9 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background-image: url('https://img.freepik.com/free-vector/blue-fluid-background-frame_53876-99019.jpg?w=360&t=st=1723130759~exp=1723131359~hmac=dc57b130b28cab37a49e0172988377c7e0cc1c2c74da4296de6dc12fc6cdf56d');
-             background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -73,13 +72,13 @@
             <span>&times;</span>
         </div>
         <h2>Warning!</h2>
-        <h4>Please Fill All The Questions </h4>
-        <button onclick="goBack()">OK</button></button>
+        <h4>Please Fill All The Questions</h4>
+        <button onclick="reloadPage()">OK</button>
     </div>
 
     <script>
-        function goBack() {
-            window.history.back();
+        function reloadPage() {
+            window.location.reload();
         }
     </script>
 </body>
