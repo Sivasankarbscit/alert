@@ -72,13 +72,13 @@
             <span>&times;</span>
         </div>
         <h2>Warning!</h2>
-        <h4>Please Fill All The Questions</h4>
-        <button onclick="reloadPage()">OK</button>
+        <p>Please fill all the questions.</p>
+        <button onclick="goBack()">OK</button>
     </div>
 
     <script>
-        function reloadPage() {
-            window.location.reload();
+        function goBack() {
+            window.history.back();
         }
     </script>
 </body>
